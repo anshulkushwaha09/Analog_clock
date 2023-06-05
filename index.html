@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="name">Analog clock <br>By Pankaj (Anshul)</div>
+    <div id="clock">
+        <div id="hour"></div>
+        <div id="min"></div> 
+        <div id="sec"></div>
+    </div>
+
+    <script>
+       setInterval(
+        () => {
+            t = new Date();
+            tHour = t.getHours();
+            tMin = t.getMinutes();
+            tSec = t.getSeconds();
+
+            hRot = 30*tHour + tMin/2;
+            mRot = 6*tMin;
+            sRot = 6*tSec;
+            
+            hour.style.transform = `rotate(${hRot}deg)`;
+            min.style.transform = `rotate(${mRot}deg)`;
+            sec.style.transform = `rotate(${sRot}deg)`;
+
+
+        }
+       ) 
+       
+
+
+
+    </script>
+</body>
+</html>

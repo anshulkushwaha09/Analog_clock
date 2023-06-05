@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.name{
+    position: absolute;
+    top: 50px;
+    left: 43%;
+    font-size: x-large;
+    text-align: center;
+}
+#clock{
+    /* border: solid 2px blue; */
+    height: 26vw;
+    width: 40vw;
+    margin: auto;
+    background: url(analog.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+    top: 150px;
+   
+}
+
+#hour, #min, #sec{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 2%;
+    height: 20%;
+    left: 49.5%;
+    top: 30%;
+    background-color: blue;
+    /* display: none; */
+}
+
+#min{
+    width: 1.5%;
+    height: 30%;
+    left: 49.6%;
+    top: 21%;
+    background-color: rgb(170, 168, 28);
+    /* display: none; */
+}
+
+#sec{
+    width: 0.8%;
+    height: 37%;
+    left: 49.5%;
+    top: 14%;
+    background-color: rgb(228, 52, 28);
+}
+
+@media only screen and (max-width: 600px){
+    .name{
+        left: 110px;
+        font-size: large;
+    }
+}
